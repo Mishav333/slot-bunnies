@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Snow Bunnies: pick a look</title>
+<style>
+  :root{
+    --snow:#F6FAFF;
+    --ink:#142449;
+    --red:#E8402F;
+    --sky:#1E9BD7;
+    --pink:#FF4D9E;
+    --midnight:#0A1128;
+    --cobalt:#1D3FD6;
+    --orange:#FF5A1F;
+    --head:"Futura","Avenir Next","Helvetica Neue",sans-serif;
+    --body:"Avenir Next","Avenir","Helvetica Neue",sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    background:var(--snow);
+    background-image:radial-gradient(rgba(30,155,215,.12) 1.3px, transparent 1.4px);
+    background-size:20px 20px;
+    color:var(--ink);font-family:var(--body);line-height:1.55;
+    min-height:100vh;display:flex;flex-direction:column;
+  }
+  :focus-visible{outline:3px solid var(--red);outline-offset:3px;}
+  header{padding:3.5rem 1.5rem 1rem;text-align:center;}
+  .eyebrow{
+    display:inline-block;background:#FFC933;border:3px solid var(--ink);
+    font-family:var(--head);font-weight:700;text-transform:uppercase;letter-spacing:.18em;
+    font-size:.72rem;padding:.35rem .9rem;transform:rotate(-2deg);
+    box-shadow:4px 4px 0 var(--ink);margin-bottom:1.3rem;
+  }
+  h1{
+    font-family:var(--head);font-weight:700;text-transform:uppercase;letter-spacing:.04em;
+    font-size:clamp(2.4rem,7vw,4.2rem);line-height:1;color:var(--red);
+    text-shadow:4px 4px 0 var(--ink);
+  }
+  .sub{margin:1.1rem auto 0;max-width:44ch;font-size:1.05rem;font-weight:600;}
+  main{flex:1;width:100%;max-width:1040px;margin:0 auto;padding:2.2rem 1.5rem 3rem;
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.6rem;}
+  .card{
+    display:flex;flex-direction:column;gap:.8rem;text-decoration:none;color:var(--ink);
+    background:#FFFFFF;border:3px solid var(--ink);box-shadow:7px 7px 0 var(--ink);
+    padding:1.6rem 1.4rem 1.4rem;transition:transform .12s ease;
+  }
+  .card:hover,.card:focus-visible{transform:translate(-2px,-2px);}
+  .card .num{
+    font-family:var(--head);font-weight:700;font-size:.72rem;letter-spacing:.24em;
+    text-transform:uppercase;color:#5A6A8C;
+  }
+  .card h2{
+    font-family:var(--head);font-weight:700;text-transform:uppercase;letter-spacing:.03em;
+    font-size:1.7rem;line-height:1;
+  }
+  .card p{font-size:.95rem;flex:1;}
+  .card .go{
+    align-self:flex-start;font-family:var(--head);font-weight:700;text-transform:uppercase;
+    letter-spacing:.14em;font-size:.75rem;color:#FFFFFF;padding:.55rem .95rem;border:3px solid var(--ink);
+  }
+  .card.one h2{color:var(--sky);}   .card.one .go{background:var(--red);}
+  .card.two{background:var(--midnight);color:#E9F1FF;border-color:var(--ink);}
+  .card.two h2{color:var(--pink);}  .card.two .go{background:var(--pink);}
+  .card.three h2{color:var(--cobalt);} .card.three .go{background:var(--orange);}
+  footer{
+    background:var(--ink);color:var(--snow);padding:1.1rem 1.5rem;text-align:center;
+    font-family:var(--head);font-weight:700;letter-spacing:.2em;text-transform:uppercase;font-size:.7rem;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="eyebrow">Team review, three looks</span>
+  <h1>Snow Bunnies</h1>
+  <p class="sub">One business, one deal, three ways to dress it. Open all three, pick a favourite, shout it in the chat.</p>
+</header>
+
+<main>
+  <a class="card one" href="option-1-powder-day.html">
+    <span class="num">Option 1</span>
+    <h2>Powder Day</h2>
+    <p>Sunny 90s cartoon ski poster. Lift-ticket team cards and the money model drawn as a chairlift.</p>
+    <span class="go">View option 1</span>
+  </a>
+  <a class="card two" href="option-2-apres-hours.html">
+    <span class="num">Option 2</span>
+    <h2>Après Hours</h2>
+    <p>Night slope and neon. A flickering sign, a betting-style crew board, a lit payout ladder.</p>
+    <span class="go">View option 2</span>
+  </a>
+  <a class="card three" href="option-3-clean-sheet.html">
+    <span class="num">Option 3</span>
+    <h2>Clean Sheet</h2>
+    <p>Flat Swiss poster. Huge type, hard grid, and the whole deal as one line of maths.</p>
+    <span class="go">View option 3</span>
+  </a>
+</main>
+
+<footer>Internal review page for the Snow Bunnies team</footer>
+
+</body>
+</html>
