@@ -104,10 +104,10 @@
   .eq-note b{color:var(--orange);}
 
   /* team grid */
-  .grid{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:4px solid var(--ink);}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);border-bottom:4px solid var(--ink);}
   .cell{border-right:4px solid var(--ink);border-bottom:4px solid var(--ink);padding:1.5rem 1.3rem;display:flex;flex-direction:column;gap:.7rem;min-height:190px;}
-  .cell:nth-child(4n){border-right:none;}
-  .cell:nth-child(n+5){border-bottom:none;}
+  .cell:nth-child(3n){border-right:none;}
+  .cell:nth-child(n+7){border-bottom:none;}
   .cell h4{
     font-family:var(--disp);font-weight:900;text-transform:uppercase;
     font-size:clamp(1.6rem,2.6vw,2.2rem);line-height:.9;
@@ -136,10 +136,11 @@
     .intro{grid-template-columns:1fr;}
     .intro-copy{border-right:none;border-bottom:4px solid var(--ink);}
     .grid{grid-template-columns:repeat(2,1fr);}
-    .cell:nth-child(4n){border-right:4px solid var(--ink);}
+    .cell:nth-child(3n){border-right:4px solid var(--ink);}
     .cell:nth-child(2n){border-right:none;}
-    .cell:nth-child(n+5){border-bottom:4px solid var(--ink);}
-    .cell:nth-child(n+7){border-bottom:none;}
+    .cell:nth-child(n+7){border-bottom:4px solid var(--ink);}
+    .cell:nth-child(n+9){border-bottom:none;}
+    .cell:last-child{grid-column:1 / -1;border-right:none;}
     .eq-op{flex:1 1 100%;border-right:none;border-bottom:4px solid var(--ink);padding:.6rem;}
     .eq-box{border-right:none;border-bottom:4px solid var(--ink);}
     .eq-box:last-child{border-bottom:none;}
@@ -159,7 +160,7 @@
   <div class="meta">
     <span>Slot Bunnies</span>
     <span>Game studio for Stake</span>
-    <span>Eight equal partners</span>
+    <span>Nine equal partners</span>
     <span>2026</span>
   </div>
 
@@ -173,10 +174,10 @@
   <div class="intro">
     <div class="intro-copy">
       <h2>Fresh powder. Fresh games. <em>No lift lines.</em></h2>
-      <p>Slot Bunnies is a game studio with one client and one job: original games for Stake, built fun first. Two rabbits on the badge, tattoos and all, and eight partners behind them shipping the work.</p>
+      <p>Slot Bunnies is a game studio with one client and one job: original games for Stake, built fun first. Two rabbits on the badge, tattoos and all, and nine partners behind them shipping the work.</p>
       <div class="factline">
         <div class="fact"><span class="n">1</span><span class="l">Client: Stake</span></div>
-        <div class="fact"><span class="n">8</span><span class="l">Equal partners</span></div>
+        <div class="fact"><span class="n">9</span><span class="l">Equal partners</span></div>
         <div class="fact"><span class="n">10%</span><span class="l">Of game revenue</span></div>
       </div>
     </div>
@@ -195,75 +196,80 @@
   <div class="equation">
     <div class="eq-box">
       <span class="lab">What Stake makes on our games</span>
-      <span class="num">$1,000,000</span>
+      <span class="num">$10,000,000</span>
       <span class="sub">in a month, say</span>
     </div>
     <div class="eq-op">×10%</div>
     <div class="eq-box">
       <span class="lab">To Slot Bunnies</span>
-      <span class="num">$100,000</span>
+      <span class="num">$1,000,000</span>
       <span class="sub">all games, every month</span>
     </div>
-    <div class="eq-op">÷8</div>
+    <div class="eq-op">÷9</div>
     <div class="eq-box result">
       <span class="lab">Each partner, equal</span>
-      <span class="num">$12,500</span>
+      <span class="num">$111,111</span>
       <span class="sub">same seat, same share</span>
     </div>
   </div>
-  <p class="eq-note">Slot Bunnies earns <b>10% of everything Stake makes on our games</b>, and it splits evenly across eight partners. The games get bigger, the number gets bigger, the split never changes.</p>
+  <p class="eq-note">Slot Bunnies earns <b>10% of everything Stake makes on our games</b>, and it splits evenly across nine partners. The games get bigger, the number gets bigger, the split never changes.</p>
 
   <div class="sechead">
     <h3>The team</h3>
     <div class="rule"></div>
-    <span class="tag">12.5% each, no exceptions</span>
+    <span class="tag">11.1% each, no exceptions</span>
   </div>
 
   <div class="grid">
     <div class="cell">
       <h4>Misha</h4>
       <p>Game strategy. Nostalgia research, concepts and ideation.</p>
-      <div class="chips"><span class="chip">Strategy</span><span class="chip share">12.5%</span></div>
+      <div class="chips"><span class="chip">Strategy</span><span class="chip share">11.1%</span></div>
     </div>
     <div class="cell">
       <h4>Paul</h4>
       <p>Overarching strategy. The launch pad.</p>
-      <div class="chips"><span class="chip">Launch</span><span class="chip share">12.5%</span></div>
+      <div class="chips"><span class="chip">Launch</span><span class="chip share">11.1%</span></div>
     </div>
     <div class="cell">
       <h4>Matt</h4>
       <p>Gaming QC and hands-on gameplay help.</p>
-      <div class="chips"><span class="chip">QC</span><span class="chip share">12.5%</span></div>
+      <div class="chips"><span class="chip">QC</span><span class="chip share">11.1%</span></div>
+    </div>
+    <div class="cell">
+      <h4>Jared</h4>
+      <p>Technical lead, aka Wizard. Games that slap, maths that works.</p>
+      <div class="chips"><span class="chip">Tech lead</span><span class="chip share">11.1%</span></div>
     </div>
     <div class="cell">
       <h4>Josh</h4>
       <p>Game expansion. More games, bigger runs.</p>
-      <div class="chips"><span class="chip axe">Axed Media</span><span class="chip share">12.5%</span></div>
+      <div class="chips"><span class="chip axe">Axed Media</span><span class="chip share">11.1%</span></div>
     </div>
     <div class="cell">
       <h4>Liam</h4>
       <p>Game expansion. Scales what works.</p>
-      <div class="chips"><span class="chip axe">Axed Media</span><span class="chip share">12.5%</span></div>
+      <div class="chips"><span class="chip axe">Axed Media</span><span class="chip share">11.1%</span></div>
     </div>
     <div class="cell">
       <h4>Luke</h4>
       <p>Game expansion. Opens new lines.</p>
-      <div class="chips"><span class="chip axe">Axed Media</span><span class="chip share">12.5%</span></div>
+      <div class="chips"><span class="chip axe">Axed Media</span><span class="chip share">11.1%</span></div>
     </div>
     <div class="cell">
       <h4>Mahdi</h4>
       <p>Staffing developers and designers. Social presence.</p>
-      <div class="chips"><span class="chip">Crew</span><span class="chip share">12.5%</span></div>
+      <div class="chips"><span class="chip">Crew</span><span class="chip share">11.1%</span></div>
     </div>
     <div class="cell">
       <h4>Sina</h4>
       <p>Staffing developers and designers. Social presence.</p>
-      <div class="chips"><span class="chip">Crew</span><span class="chip share">12.5%</span></div>
+      <div class="chips"><span class="chip">Crew</span><span class="chip share">11.1%</span></div>
     </div>
   </div>
 
   <footer class="footerbar">
-    <span class="big">Eight partners. Equal shares. <em>Games for Stake.</em></span>
+    <span class="big">Nine partners. Equal shares. <em>Games for Stake.</em></span>
     <span class="small">Slot Bunnies ✕ 2026</span>
   </footer>
 
